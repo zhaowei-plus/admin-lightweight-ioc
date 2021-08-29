@@ -1,0 +1,81 @@
+.feature-config-form {
+  background-color: #FFFFFF;
+
+  &__step {
+    display: flex;
+    align-items: center;
+    height: 96px;
+    width: 60% !important;
+    line-height: 96px;
+    margin: 10px auto !important;
+
+    .ant-steps-item-container {
+      display: flex;
+      align-items: center;
+
+      .ant-steps-item-content {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &__tabs {
+    .ant-tabs-nav {
+      .ant-tabs-nav-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  // 体征基础信息
+  .base-info {
+    // 针对布局样式的处理
+    .mega-layout-item {
+      .ant-form-item-explain-error {
+        display: none !important;
+      }
+
+      &.mega-layout-item-inset-has-error {
+        .ant-form-item-explain-error {
+          display: block !important;
+          position: absolute;
+          left: 0;
+          bottom: -22px;
+        }
+      }
+    }
+  }
+
+  // 体征数据源意义面板样式
+  .source-mean {
+    .ant-table-wrapper {
+      .ant-form-item {
+        margin-bottom: 0 !important;
+      }
+      tr {
+        //display: flex;
+        //align-items: center;
+        //justify-content: flex-start;
+      }
+      thead {
+        th {
+          flex: 1;
+          padding: 5px 0 !important;
+        }
+      }
+      tbody {
+        td {
+          flex: 1;
+          padding: 10px 16px 10px 0 !important;
+        }
+      }
+    }
+  }
+
+  // 体征图表配置面板样式
+  .chart-config {
+  }
+}

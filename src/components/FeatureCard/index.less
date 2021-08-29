@@ -1,0 +1,127 @@
+.feature-card {
+  width: 320px;
+  height: 160px;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #E9ECF0;
+  padding: 16px;
+
+  &:hover {
+    box-shadow: 0 0 5px 0 #3993f3;
+  }
+
+  &__header {
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+
+    .back {
+      margin-right: 10px;
+    }
+
+    .title {
+      color: #0e0e0e;
+      font-weight: 500;
+      margin-right: 10px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .extra {
+      &__more {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    flex: 1;
+    margin-top: 6px;
+
+    .info {
+      height: 100%;
+      width: 170px;
+      overflow: hidden;
+
+      &__content {
+        width: 100%;
+        font-size: 12px;
+        line-height: 18px;
+        flex: 1;
+
+        &>.title {
+          color: #5c626b;
+          max-height: 54px;
+          height: 104px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+
+        &>.tips {
+          color: #959ba3;
+          font-size: 10px;
+          max-width: 190px;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+
+          .item {
+            width: 50%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+
+      &__footer {
+        margin-top: 8px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+
+        &>span {
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .picture {
+      width: 104px;
+      height: 104px;
+      background-color: transparent;
+      background-position: center;
+      background-size: 100% 100%;
+      position: relative;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:empty {
+        &:after {
+          position: absolute;
+          content: '暂无缩略图';
+          color: #5c626b;
+          opacity: 0.5;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          font-size: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+  }
+}

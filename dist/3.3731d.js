@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{"tr/t":function(n,t,e){"use strict";e.r(t);var i=e("xwgP"),o=e.n(i),a=e("Nhdc");t.default=function(){return o.a.createElement(a.e,{title:"表单引擎",src:"".concat(window.location.origin,"/admin/#/baas-form-engine/list")})}}}]);

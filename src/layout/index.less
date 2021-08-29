@@ -1,0 +1,189 @@
+@import '~antd/dist/antd.css';
+
+/**************** 主题样式 **********************/
+@brand: #488FF9; // 品牌色
+@lBrand: #ff9b9b; // 浅品牌色
+
+@red: #fb7171; // 红色
+@lRed: #fdb1b1; // 浅红
+@xlRed: #fdb1b1; // 非常浅红
+
+@green: #2dc888; // 绿色
+@lGreen: #89e0bc; // 浅绿色
+
+@blue: #488ff9; // 蓝色
+@lBlue: #98c0fb; // 浅蓝色
+
+@yellow: #ffa400; // 黄色
+@lYellow: #ffcc70; // 浅黄色
+
+@violet: #8d71ff; // 紫色
+@lViolet: #beafff; // 浅紫色
+
+@orange: #ff8022; // 橙色
+@cOrange: #ffb883; // 橙色
+
+@brown: #c09040; // 尊贵色
+@lBrown: #dbc093; // 浅尊贵色
+@xlBrown: #dbc093; // 非常浅尊贵色
+
+@link: #2e58d6;
+@lLink: #91a6e5;
+@success: #2dc888;
+@lSuccess: #89e0bc;
+@warning: #ffa400; // 提示
+@caution: #f53939; // 警示
+@invalid: #cbcfd6; // 不可用
+
+@black: #000000; // 黑色 页面强调
+@dark: #262a30; // 正文
+@xdGray: #5c626b; // 弱正文
+@dGray: #959ba3; // 辅助文字
+@gray: #cbcfd6; // 无效色，引导文字
+@lGray: #e9ecf0; // 边框，分割线
+@xlGray: #f7f8f9; // 背景色
+@xxlGray: #f7f8f9; // 侧导航背景色
+@white: #ffffff; // 白色
+
+@bgHover: #f4f6fd; // table hover 色
+
+/**************** 全局原子样式 **********************/
+.flex {
+  display: flex;
+  flex-direction: row;
+
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.f1 {
+  flex: 1;
+}
+.f2 {
+  flex: 2;
+}
+.f3 {
+  flex: 3;
+}
+
+.as {
+  align-items: flex-start;
+}
+.ac {
+  align-items: center;
+}
+.ae {
+  align-items: flex-end;
+}
+.js {
+  justify-content: flex-start;
+}
+.jc {
+  justify-content: center;
+}
+.je {
+  justify-content: flex-end;
+}
+.jsb {
+  justify-content: space-between;
+}
+.jsa {
+  justify-content: space-around;
+}
+.h32 {
+  height: 32px;
+}
+.lh32 {
+  line-height: 32px;
+}
+.p4 {
+  padding: 4px;
+}
+.p8 {
+  padding: 8px;
+}
+.p12 {
+  padding: 12px;
+}
+.pl4 {
+  padding-left: 4px;
+}
+.pl8 {
+  padding-left: 8px;
+}
+.pl12 {
+  padding-left: 12px;
+}
+.pr4 {
+  padding-right: 4px;
+}
+.pr8 {
+  padding-right: 8px;
+}
+.pr12 {
+  padding-right: 12px;
+}
+.pt4 {
+  padding-top: 4px;
+}
+.pt8 {
+  padding-top: 8px;
+}
+.pt12 {
+  padding-top: 12px;
+}
+.pb4 {
+  padding-bottom: 4px;
+}
+.pb8 {
+  padding-bottom: 8px;
+}
+.pb12 {
+  padding-bottom: 12px;
+}
+
+/**************** 全局公共样式 **********************/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-left: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(149, 155, 163, 0.2);
+
+  &:hover {
+    background: rgba(149, 155, 163, 0.4);
+  }
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/**************** 全局公共图标 **********************/
+.icon {
+  background-size: cover;
+  background-position: center;
+
+  //&-feature-config {
+  //  background-image: url("@/assets/images/icon-feature-config.png");
+  //}
+}
+// radio 按钮组
+.xm-radio-buttons {
+  .ant-radio-button-wrapper {
+    margin-right: 8px;
+  }
+}
+

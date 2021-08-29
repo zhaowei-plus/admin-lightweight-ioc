@@ -1,0 +1,154 @@
+@menuHeight: 50px;
+
+.xm-header {
+  height: @menuHeight;
+  padding: 0 20px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  background-image: linear-gradient(#3D424A, #262A30);
+
+  &__info {
+    .xm-company {
+      width: 300px;
+      height: 100%;
+
+      &__icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background-position: center;
+        background-size: cover;
+        vertical-align: middle;
+        background-image: url('@/assets/images/icon-logo.png');
+      }
+
+      &__title {
+        flex: 1;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &__menus {
+    height: @menuHeight;
+    line-height: @menuHeight;
+    flex: 1;
+
+    .menu {
+      width: 150px;
+      height: 100%;
+      text-align: center;
+      background-color: transparent;
+      color: rgba(255, 255, 255, .8);
+      cursor: pointer;
+
+      &.active {
+        background-color: rgba(255, 255, 255, .1);
+        color: #FFFFFF;
+      }
+     }
+  }
+
+  &__user {
+    .user__name {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 8px;
+    }
+  }
+}
+
+.sub-menu-item {
+  padding: 4px;
+  height: 40px;
+
+  &:hover {
+    background-color: grey;
+  }
+
+  &.active {
+    background-color: rgba(255, 255, 255, .1);
+  }
+
+  &__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    background-image: linear-gradient(#77AEEF, #3888E8);
+  }
+
+  &__title {
+    margin-left: 10px;
+  }
+}
+
+// 创建图标地址
+.createIcon(@iconName) {
+  background-size: cover;
+  background-position: center;
+  background-image: url('@/assets/images/icon-@{iconName}.png');
+}
+
+//@selectors: 'feature-config', 'template-config';
+//each(@selectors, {
+//  .icon-@{value} {
+//    .createIcon(@value);
+//  }
+//})
+
+.icon {
+  background-size: cover;
+  background-position: center;
+
+  &-feature-config {
+    .createIcon('feature-config');
+  }
+  &-template-config {
+    .createIcon('template-config');
+  }
+  &-data-cube {
+    .createIcon('data-cube');
+  }
+  &-form-engine {
+    .createIcon('form-engine');
+  }
+  &-form-center {
+    .createIcon('form-center');
+  }
+  &-feature-library {
+    .createIcon('feature-library');
+  }
+  &-sample-room {
+    .createIcon('sample-room');
+  }
+  &-project-factory {
+    .createIcon('project-factory');
+  }
+}
+
+.createClass(@iconName) {
+  .icon-@{iconName}
+  {
+    background-size: cover;
+    background-position: center;
+    background-color: color(@iconName);
+  }
+}
+
+.icon-blue {
+  background-color: green;
+  //.createClass('#00ffff');
+  //
+}
+
+@selectors: 'feature-config', blue;
+each(@selectors, {
+  .icon-@{value} {
+    border: 1px solid red !important;
+    //border: 1px solid color(@value);
+  }
+})
+
+//.createClass('blue');

@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{NjVw:function(n,t,c){"use strict";c.r(t);var e=c("xwgP"),a=c.n(e),i=c("Nhdc");t.default=function(){return a.a.createElement(i.e,{title:"数据魔方",src:"".concat(window.location.origin,"/admin/#/data-cube")})}}}]);

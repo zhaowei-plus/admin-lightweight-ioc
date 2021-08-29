@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[0],{"FL/P":function(n,t,e){"use strict";e.r(t);var i=e("xwgP"),o=e.n(i),c=e("Nhdc");t.default=function(){return o.a.createElement(c.e,{title:"表单中心",src:"".concat(window.location.origin,"/admin/#/send-form/list")})}}}]);
